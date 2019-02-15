@@ -1,0 +1,198 @@
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navu-brand{
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color:black;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7)
+    
+}
+
+
+.nav-link{
+    text-transform: uppercase;
+     border-top: 3px;
+    color: black;
+} 
+
+
+.nav-link:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid rgb(241, 241, 241);
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+    
+}
+.icon
+{
+    margin-left: 5px;
+}
+/* jumbotron */
+.jumbotron .display-4{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top:100px;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+}
+
+
+.jumbotron{
+    background-image: url(img/117-4.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center top;
+    position: relative;
+}
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+
+.judul{
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.about{
+    text-align: center;
+}
+
+.about h3{
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+ 
+}
+
+.about h3 span{
+  
+    font-weight: 500;
+   
+}
+.card h1{
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.card{
+    margin-top: 5px;
+    font-size: 15px;  
+}
+
+.card p {
+    margin-left: 5px;
+    margin-right: 2px;
+}
+.card .btn{
+    width: 40%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.background{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    background-image: url(img/1.jpg);
+    background-position: center; 
+}
+
+.background .judul{
+    color: azure;
+    border-bottom-color: aliceblue;
+    margin-top: 25px;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+}
+
+.tz-gallery{
+    margin-bottom: 20px;
+}
+
+.footer-classic{
+    color: white;
+}
+.footer-classic a{
+    color: white;
+    
+}
+
+
+
+/* desktop */
+@media (min-width: 992px) {
+    .navu-brand{
+    color: white !important;
+    }
+      
+.jumbotron{
+    margin-top:-75px;
+    height: 750px;
+}
+.jumbotron .display-4 {
+        font-size: 60px;
+        margin-top:150px
+    }
+
+.nav-link{
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7)
+    
+}
+.nav-link:hover {
+    color:white;
+
+}
+.about h3{
+    margin-top: 60px;
+}
+
+.about{
+    text-align: left;
+}
+.card h1{
+    font-size: 30px;
+    
+}
+}
+
+@media (min-width: 576px) { 
+    .navu-brand{
+      
+        color: black;
+    }
+    .icon{
+        display: hidden;
+    }
+    .card .btn{
+        font-size: 15px;
+        width: 100px;
+        margin-left: 5px;
+    }
+ }
